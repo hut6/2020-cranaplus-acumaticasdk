@@ -1,0 +1,12 @@
+{
+    "invokerPackage": "Hut6\\CranaplusAcumaticaSdk",
+    "variableNamingConvention": "camelCase",
+    "composerVendorName": "hut6",
+    "composerProjectName": "2020-cranaplus-acumaticasdk",
+    "modelNameSuffix": "Model",
+    "developerName": "HutSix",
+    "developerEmail": "team@hutsix.com.au",
+    "developerOrganization": "HutSix",
+    "developerOrganizationUrl": "https://hutsix.com.au/",
+    "hideGenerationTimestamp": "true"
+}
