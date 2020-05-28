@@ -1,15 +1,17 @@
 #!/bin/bash
 
-mv bin ../bin-aaaaaaa
-rm -rf ..?* .[!.]* *
-mv ../bin-aaaaaaa bin
-
 docker run --rm  -u $UID -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i "https://crana.myobadvanced.com/(W(15))/entity/Default/17.200.001/swagger.json?company=CRANA_INTEG_DEV" -o /local/ -l php -c /local/bin/swagger-config.json
+
+rm -rf docs
+rm -rf lib
+rm -rf README.md
+rm -rf composer.json
 
 mv SwaggerClient-php/docs .
 mv SwaggerClient-php/lib .
 mv SwaggerClient-php/README.md .
 mv SwaggerClient-php/composer.json .
+
 rm -rf SwaggerClient-php
 rm -rf .swagger-codegen
 rm .swagger-codegen-ignore
