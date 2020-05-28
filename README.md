@@ -74,7 +74,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://crana.myobadvanced.com/entity/Default/17.200.001*
+All URIs are relative to *http://crana.myobadvanced.com/entity/Crana/17.200.001*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

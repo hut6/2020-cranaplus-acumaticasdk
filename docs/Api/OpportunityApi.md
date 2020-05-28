@@ -1,6 +1,6 @@
 # Hut6\CranaplusAcumaticaSdk\OpportunityApi
 
-All URIs are relative to *http://crana.myobadvanced.com/entity/Default/17.200.001*
+All URIs are relative to *http://crana.myobadvanced.com/entity/Crana/17.200.001*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
