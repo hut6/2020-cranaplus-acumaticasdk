@@ -3,11 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] 
-**rowNumber** | **int** |  | [optional] 
-**note** | **string** |  | [optional] 
-**custom** | [**map[string,map[string,\Hut6\CranaplusAcumaticaSdk\Model\CustomFieldModel]]**](map.md) |  | [optional] 
-**files** | [**\Hut6\CranaplusAcumaticaSdk\Model\FileLinkModel[]**](FileLinkModel.md) |  | [optional] 
 **amount** | [**\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel**](DecimalValueModel.md) |  | [optional] 
 **applicationsCreditMemo** | [**\Hut6\CranaplusAcumaticaSdk\Model\InvoiceApplicationsCreditMemoModel[]**](InvoiceApplicationsCreditMemoModel.md) |  | [optional] 
 **applicationsDefault** | [**\Hut6\CranaplusAcumaticaSdk\Model\InvoiceApplicationsDefaultModel[]**](InvoiceApplicationsDefaultModel.md) |  | [optional] 

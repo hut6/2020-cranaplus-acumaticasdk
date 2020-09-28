@@ -3,11 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] 
-**rowNumber** | **int** |  | [optional] 
-**note** | **string** |  | [optional] 
-**custom** | [**map[string,map[string,\Hut6\CranaplusAcumaticaSdk\Model\CustomFieldModel]]**](map.md) |  | [optional] 
-**files** | [**\Hut6\CranaplusAcumaticaSdk\Model\FileLinkModel[]**](FileLinkModel.md) |  | [optional] 
 **allocations** | [**\Hut6\CranaplusAcumaticaSdk\Model\KitAssemblyStockComponentAllocationModel[]**](KitAssemblyStockComponentAllocationModel.md) |  | [optional] 
 **componentQty** | [**\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel**](DecimalValueModel.md) |  | [optional] 
 **lineNbr** | [**\Hut6\CranaplusAcumaticaSdk\Model\IntValueModel**](IntValueModel.md) |  | [optional] 

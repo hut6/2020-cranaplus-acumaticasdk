@@ -3,11 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] 
-**rowNumber** | **int** |  | [optional] 
-**note** | **string** |  | [optional] 
-**custom** | [**map[string,map[string,\Hut6\CranaplusAcumaticaSdk\Model\CustomFieldModel]]**](map.md) |  | [optional] 
-**files** | [**\Hut6\CranaplusAcumaticaSdk\Model\FileLinkModel[]**](FileLinkModel.md) |  | [optional] 
 **allocationDate** | [**\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel**](DateTimeValueModel.md) |  | [optional] 
 **allocationType** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 
 **docType** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 

@@ -3,11 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] 
-**rowNumber** | **int** |  | [optional] 
-**note** | **string** |  | [optional] 
-**custom** | [**map[string,map[string,\Hut6\CranaplusAcumaticaSdk\Model\CustomFieldModel]]**](map.md) |  | [optional] 
-**files** | [**\Hut6\CranaplusAcumaticaSdk\Model\FileLinkModel[]**](FileLinkModel.md) |  | [optional] 
 **account** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 
 **accrualAccount** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 
 **accrualSubaccount** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 

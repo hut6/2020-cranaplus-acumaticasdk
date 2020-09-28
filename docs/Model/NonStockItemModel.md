@@ -3,11 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] 
-**rowNumber** | **int** |  | [optional] 
-**note** | **string** |  | [optional] 
-**custom** | [**map[string,map[string,\Hut6\CranaplusAcumaticaSdk\Model\CustomFieldModel]]**](map.md) |  | [optional] 
-**files** | [**\Hut6\CranaplusAcumaticaSdk\Model\FileLinkModel[]**](FileLinkModel.md) |  | [optional] 
 **attributes** | [**\Hut6\CranaplusAcumaticaSdk\Model\NonStockItemAttributeModel[]**](NonStockItemAttributeModel.md) |  | [optional] 
 **baseUnit** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 
 **crossReferences** | [**\Hut6\CranaplusAcumaticaSdk\Model\InventoryItemCrossReferenceModel[]**](InventoryItemCrossReferenceModel.md) |  | [optional] 
