@@ -1202,7 +1202,14 @@ Class | Method | HTTP request | Description
  All endpoints do not require authorization.
 
 
-## Author
+## How to use
+
+- Run `bin/generate` in project folder and push to branch
+- Running CRM locally 
+-- Change to branch in `composer.json`
+-- `composer update hut6/2020-cranaplus-acumaticasdk`
+
+
 
 
 
