@@ -77,7 +77,8 @@ class CashTransactionModel extends EntityModel
         'status' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'tranDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel',
         'description' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'details' => '\Hut6\CranaplusAcumaticaSdk\Model\CashTransactionDetailModel[]'
+        'details' => '\Hut6\CranaplusAcumaticaSdk\Model\CashTransactionDetailModel[]',
+        'taxCalculation' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel'
     ];
 
     /**
@@ -108,7 +109,8 @@ class CashTransactionModel extends EntityModel
         'status' => null,
         'tranDate' => null,
         'description' => null,
-        'details' => null
+        'details' => null,
+        'taxCalculation' => null
     ];
 
     /**
@@ -160,7 +162,8 @@ class CashTransactionModel extends EntityModel
         'status' => 'Status',
         'tranDate' => 'TranDate',
         'description' => 'Description',
-        'details' => 'Details'
+        'details' => 'Details',
+        'taxCalculation' => 'TaxCalculation'
     ];
 
     /**
@@ -191,7 +194,8 @@ class CashTransactionModel extends EntityModel
         'status' => 'setStatus',
         'tranDate' => 'setTranDate',
         'description' => 'setDescription',
-        'details' => 'setDetails'
+        'details' => 'setDetails',
+        'taxCalculation' => 'setTaxCalculation'
     ];
 
     /**
@@ -222,7 +226,8 @@ class CashTransactionModel extends EntityModel
         'status' => 'getStatus',
         'tranDate' => 'getTranDate',
         'description' => 'getDescription',
-        'details' => 'getDetails'
+        'details' => 'getDetails',
+        'taxCalculation' => 'getTaxCalculation'
     ];
 
     /**
@@ -304,6 +309,7 @@ class CashTransactionModel extends EntityModel
         $this->container['tranDate'] = isset($data['tranDate']) ? $data['tranDate'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['details'] = isset($data['details']) ? $data['details'] : null;
+        $this->container['taxCalculation'] = isset($data['taxCalculation']) ? $data['taxCalculation'] : null;
     }
 
     /**
@@ -878,6 +884,30 @@ class CashTransactionModel extends EntityModel
     public function setDetails($details)
     {
         $this->container['details'] = $details;
+
+        return $this;
+    }
+
+    /**
+     * Gets taxCalculation
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getTaxCalculation()
+    {
+        return $this->container['taxCalculation'];
+    }
+
+    /**
+     * Sets taxCalculation
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $taxCalculation taxCalculation
+     *
+     * @return $this
+     */
+    public function setTaxCalculation($taxCalculation)
+    {
+        $this->container['taxCalculation'] = $taxCalculation;
 
         return $this;
     }
