@@ -1203,7 +1203,7 @@ Class | Method | HTTP request | Description
 
 
 ## How to use
-
+- Check URL in `generate` 
 - Run `bin/generate` in project folder and push to branch
 - Running CRM locally 
 -- Change to branch in `composer.json`
