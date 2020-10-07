@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **description** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 
 **details** | [**\Hut6\CranaplusAcumaticaSdk\Model\CashTransactionDetailModel[]**](CashTransactionDetailModel.md) |  | [optional] 
 **taxCalculation** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 
+**overrideTaxAmount** | [**\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel**](DecimalValueModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

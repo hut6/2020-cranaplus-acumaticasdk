@@ -78,7 +78,8 @@ class CashTransactionModel extends EntityModel
         'tranDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel',
         'description' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'details' => '\Hut6\CranaplusAcumaticaSdk\Model\CashTransactionDetailModel[]',
-        'taxCalculation' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel'
+        'taxCalculation' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'overrideTaxAmount' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel'
     ];
 
     /**
@@ -110,7 +111,8 @@ class CashTransactionModel extends EntityModel
         'tranDate' => null,
         'description' => null,
         'details' => null,
-        'taxCalculation' => null
+        'taxCalculation' => null,
+        'overrideTaxAmount' => null
     ];
 
     /**
@@ -163,7 +165,8 @@ class CashTransactionModel extends EntityModel
         'tranDate' => 'TranDate',
         'description' => 'Description',
         'details' => 'Details',
-        'taxCalculation' => 'TaxCalculation'
+        'taxCalculation' => 'TaxCalculation',
+        'overrideTaxAmount' => 'OverrideTaxAmount'
     ];
 
     /**
@@ -195,7 +198,8 @@ class CashTransactionModel extends EntityModel
         'tranDate' => 'setTranDate',
         'description' => 'setDescription',
         'details' => 'setDetails',
-        'taxCalculation' => 'setTaxCalculation'
+        'taxCalculation' => 'setTaxCalculation',
+        'overrideTaxAmount' => 'setOverrideTaxAmount'
     ];
 
     /**
@@ -227,7 +231,8 @@ class CashTransactionModel extends EntityModel
         'tranDate' => 'getTranDate',
         'description' => 'getDescription',
         'details' => 'getDetails',
-        'taxCalculation' => 'getTaxCalculation'
+        'taxCalculation' => 'getTaxCalculation',
+        'overrideTaxAmount' => 'getOverrideTaxAmount'
     ];
 
     /**
@@ -310,6 +315,7 @@ class CashTransactionModel extends EntityModel
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['details'] = isset($data['details']) ? $data['details'] : null;
         $this->container['taxCalculation'] = isset($data['taxCalculation']) ? $data['taxCalculation'] : null;
+        $this->container['overrideTaxAmount'] = isset($data['overrideTaxAmount']) ? $data['overrideTaxAmount'] : null;
     }
 
     /**
@@ -908,6 +914,30 @@ class CashTransactionModel extends EntityModel
     public function setTaxCalculation($taxCalculation)
     {
         $this->container['taxCalculation'] = $taxCalculation;
+
+        return $this;
+    }
+
+    /**
+     * Gets overrideTaxAmount
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     */
+    public function getOverrideTaxAmount()
+    {
+        return $this->container['overrideTaxAmount'];
+    }
+
+    /**
+     * Sets overrideTaxAmount
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $overrideTaxAmount overrideTaxAmount
+     *
+     * @return $this
+     */
+    public function setOverrideTaxAmount($overrideTaxAmount)
+    {
+        $this->container['overrideTaxAmount'] = $overrideTaxAmount;
 
         return $this;
     }
