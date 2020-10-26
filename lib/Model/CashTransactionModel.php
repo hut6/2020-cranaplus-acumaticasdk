@@ -55,31 +55,31 @@ class CashTransactionModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'referenceNbr' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'tranType' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'amount' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
         'approved' => '\Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel',
         'cashAccount' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'controlTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
         'currency' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'taxAmount' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
-        'roundingDiff' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
-        'taxTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
-        'amount' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
-        'gSTExemptTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
-        'gSTTaxableTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
         'curyViewState' => '\Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel',
-        'disbursementReceipt' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'owner' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'entryType' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'documentRef' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'finPeriod' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'hold' => '\Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel',
-        'status' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'tranDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel',
         'description' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'details' => '\Hut6\CranaplusAcumaticaSdk\Model\CashTransactionDetailModel[]',
+        'disbursementReceipt' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'documentRef' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'entryType' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'finPeriod' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'gSTExemptTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'gSTTaxableTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'hold' => '\Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel',
+        'overrideTaxAmount' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'owner' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'referenceNbr' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'roundingDiff' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'status' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'taxAmount' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
         'taxCalculation' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'overrideTaxAmount' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel'
+        'taxTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'tranDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel',
+        'tranType' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel'
     ];
 
     /**
@@ -88,31 +88,31 @@ class CashTransactionModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'referenceNbr' => null,
-        'tranType' => null,
+        'amount' => null,
         'approved' => null,
         'cashAccount' => null,
         'controlTotal' => null,
         'currency' => null,
-        'taxAmount' => null,
-        'roundingDiff' => null,
-        'taxTotal' => null,
-        'amount' => null,
-        'gSTExemptTotal' => null,
-        'gSTTaxableTotal' => null,
         'curyViewState' => null,
-        'disbursementReceipt' => null,
-        'owner' => null,
-        'entryType' => null,
-        'documentRef' => null,
-        'finPeriod' => null,
-        'hold' => null,
-        'status' => null,
-        'tranDate' => null,
         'description' => null,
         'details' => null,
+        'disbursementReceipt' => null,
+        'documentRef' => null,
+        'entryType' => null,
+        'finPeriod' => null,
+        'gSTExemptTotal' => null,
+        'gSTTaxableTotal' => null,
+        'hold' => null,
+        'overrideTaxAmount' => null,
+        'owner' => null,
+        'referenceNbr' => null,
+        'roundingDiff' => null,
+        'status' => null,
+        'taxAmount' => null,
         'taxCalculation' => null,
-        'overrideTaxAmount' => null
+        'taxTotal' => null,
+        'tranDate' => null,
+        'tranType' => null
     ];
 
     /**
@@ -142,31 +142,31 @@ class CashTransactionModel extends EntityModel
      * @var string[]
      */
     protected static $attributeMap = [
-        'referenceNbr' => 'ReferenceNbr',
-        'tranType' => 'TranType',
+        'amount' => 'Amount',
         'approved' => 'Approved',
         'cashAccount' => 'CashAccount',
         'controlTotal' => 'ControlTotal',
         'currency' => 'Currency',
-        'taxAmount' => 'TaxAmount',
-        'roundingDiff' => 'RoundingDiff',
-        'taxTotal' => 'TaxTotal',
-        'amount' => 'Amount',
-        'gSTExemptTotal' => 'GSTExemptTotal',
-        'gSTTaxableTotal' => 'GSTTaxableTotal',
         'curyViewState' => 'CuryViewState',
-        'disbursementReceipt' => 'DisbursementReceipt',
-        'owner' => 'Owner',
-        'entryType' => 'EntryType',
-        'documentRef' => 'DocumentRef',
-        'finPeriod' => 'FinPeriod',
-        'hold' => 'Hold',
-        'status' => 'Status',
-        'tranDate' => 'TranDate',
         'description' => 'Description',
         'details' => 'Details',
+        'disbursementReceipt' => 'DisbursementReceipt',
+        'documentRef' => 'DocumentRef',
+        'entryType' => 'EntryType',
+        'finPeriod' => 'FinPeriod',
+        'gSTExemptTotal' => 'GSTExemptTotal',
+        'gSTTaxableTotal' => 'GSTTaxableTotal',
+        'hold' => 'Hold',
+        'overrideTaxAmount' => 'OverrideTaxAmount',
+        'owner' => 'Owner',
+        'referenceNbr' => 'ReferenceNbr',
+        'roundingDiff' => 'RoundingDiff',
+        'status' => 'Status',
+        'taxAmount' => 'TaxAmount',
         'taxCalculation' => 'TaxCalculation',
-        'overrideTaxAmount' => 'OverrideTaxAmount'
+        'taxTotal' => 'TaxTotal',
+        'tranDate' => 'TranDate',
+        'tranType' => 'TranType'
     ];
 
     /**
@@ -175,31 +175,31 @@ class CashTransactionModel extends EntityModel
      * @var string[]
      */
     protected static $setters = [
-        'referenceNbr' => 'setReferenceNbr',
-        'tranType' => 'setTranType',
+        'amount' => 'setAmount',
         'approved' => 'setApproved',
         'cashAccount' => 'setCashAccount',
         'controlTotal' => 'setControlTotal',
         'currency' => 'setCurrency',
-        'taxAmount' => 'setTaxAmount',
-        'roundingDiff' => 'setRoundingDiff',
-        'taxTotal' => 'setTaxTotal',
-        'amount' => 'setAmount',
-        'gSTExemptTotal' => 'setGSTExemptTotal',
-        'gSTTaxableTotal' => 'setGSTTaxableTotal',
         'curyViewState' => 'setCuryViewState',
-        'disbursementReceipt' => 'setDisbursementReceipt',
-        'owner' => 'setOwner',
-        'entryType' => 'setEntryType',
-        'documentRef' => 'setDocumentRef',
-        'finPeriod' => 'setFinPeriod',
-        'hold' => 'setHold',
-        'status' => 'setStatus',
-        'tranDate' => 'setTranDate',
         'description' => 'setDescription',
         'details' => 'setDetails',
+        'disbursementReceipt' => 'setDisbursementReceipt',
+        'documentRef' => 'setDocumentRef',
+        'entryType' => 'setEntryType',
+        'finPeriod' => 'setFinPeriod',
+        'gSTExemptTotal' => 'setGSTExemptTotal',
+        'gSTTaxableTotal' => 'setGSTTaxableTotal',
+        'hold' => 'setHold',
+        'overrideTaxAmount' => 'setOverrideTaxAmount',
+        'owner' => 'setOwner',
+        'referenceNbr' => 'setReferenceNbr',
+        'roundingDiff' => 'setRoundingDiff',
+        'status' => 'setStatus',
+        'taxAmount' => 'setTaxAmount',
         'taxCalculation' => 'setTaxCalculation',
-        'overrideTaxAmount' => 'setOverrideTaxAmount'
+        'taxTotal' => 'setTaxTotal',
+        'tranDate' => 'setTranDate',
+        'tranType' => 'setTranType'
     ];
 
     /**
@@ -208,31 +208,31 @@ class CashTransactionModel extends EntityModel
      * @var string[]
      */
     protected static $getters = [
-        'referenceNbr' => 'getReferenceNbr',
-        'tranType' => 'getTranType',
+        'amount' => 'getAmount',
         'approved' => 'getApproved',
         'cashAccount' => 'getCashAccount',
         'controlTotal' => 'getControlTotal',
         'currency' => 'getCurrency',
-        'taxAmount' => 'getTaxAmount',
-        'roundingDiff' => 'getRoundingDiff',
-        'taxTotal' => 'getTaxTotal',
-        'amount' => 'getAmount',
-        'gSTExemptTotal' => 'getGSTExemptTotal',
-        'gSTTaxableTotal' => 'getGSTTaxableTotal',
         'curyViewState' => 'getCuryViewState',
-        'disbursementReceipt' => 'getDisbursementReceipt',
-        'owner' => 'getOwner',
-        'entryType' => 'getEntryType',
-        'documentRef' => 'getDocumentRef',
-        'finPeriod' => 'getFinPeriod',
-        'hold' => 'getHold',
-        'status' => 'getStatus',
-        'tranDate' => 'getTranDate',
         'description' => 'getDescription',
         'details' => 'getDetails',
+        'disbursementReceipt' => 'getDisbursementReceipt',
+        'documentRef' => 'getDocumentRef',
+        'entryType' => 'getEntryType',
+        'finPeriod' => 'getFinPeriod',
+        'gSTExemptTotal' => 'getGSTExemptTotal',
+        'gSTTaxableTotal' => 'getGSTTaxableTotal',
+        'hold' => 'getHold',
+        'overrideTaxAmount' => 'getOverrideTaxAmount',
+        'owner' => 'getOwner',
+        'referenceNbr' => 'getReferenceNbr',
+        'roundingDiff' => 'getRoundingDiff',
+        'status' => 'getStatus',
+        'taxAmount' => 'getTaxAmount',
         'taxCalculation' => 'getTaxCalculation',
-        'overrideTaxAmount' => 'getOverrideTaxAmount'
+        'taxTotal' => 'getTaxTotal',
+        'tranDate' => 'getTranDate',
+        'tranType' => 'getTranType'
     ];
 
     /**
@@ -291,31 +291,31 @@ class CashTransactionModel extends EntityModel
     {
         parent::__construct($data);
 
-        $this->container['referenceNbr'] = isset($data['referenceNbr']) ? $data['referenceNbr'] : null;
-        $this->container['tranType'] = isset($data['tranType']) ? $data['tranType'] : null;
+        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['approved'] = isset($data['approved']) ? $data['approved'] : null;
         $this->container['cashAccount'] = isset($data['cashAccount']) ? $data['cashAccount'] : null;
         $this->container['controlTotal'] = isset($data['controlTotal']) ? $data['controlTotal'] : null;
         $this->container['currency'] = isset($data['currency']) ? $data['currency'] : null;
-        $this->container['taxAmount'] = isset($data['taxAmount']) ? $data['taxAmount'] : null;
-        $this->container['roundingDiff'] = isset($data['roundingDiff']) ? $data['roundingDiff'] : null;
-        $this->container['taxTotal'] = isset($data['taxTotal']) ? $data['taxTotal'] : null;
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['gSTExemptTotal'] = isset($data['gSTExemptTotal']) ? $data['gSTExemptTotal'] : null;
-        $this->container['gSTTaxableTotal'] = isset($data['gSTTaxableTotal']) ? $data['gSTTaxableTotal'] : null;
         $this->container['curyViewState'] = isset($data['curyViewState']) ? $data['curyViewState'] : null;
-        $this->container['disbursementReceipt'] = isset($data['disbursementReceipt']) ? $data['disbursementReceipt'] : null;
-        $this->container['owner'] = isset($data['owner']) ? $data['owner'] : null;
-        $this->container['entryType'] = isset($data['entryType']) ? $data['entryType'] : null;
-        $this->container['documentRef'] = isset($data['documentRef']) ? $data['documentRef'] : null;
-        $this->container['finPeriod'] = isset($data['finPeriod']) ? $data['finPeriod'] : null;
-        $this->container['hold'] = isset($data['hold']) ? $data['hold'] : null;
-        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
-        $this->container['tranDate'] = isset($data['tranDate']) ? $data['tranDate'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['details'] = isset($data['details']) ? $data['details'] : null;
-        $this->container['taxCalculation'] = isset($data['taxCalculation']) ? $data['taxCalculation'] : null;
+        $this->container['disbursementReceipt'] = isset($data['disbursementReceipt']) ? $data['disbursementReceipt'] : null;
+        $this->container['documentRef'] = isset($data['documentRef']) ? $data['documentRef'] : null;
+        $this->container['entryType'] = isset($data['entryType']) ? $data['entryType'] : null;
+        $this->container['finPeriod'] = isset($data['finPeriod']) ? $data['finPeriod'] : null;
+        $this->container['gSTExemptTotal'] = isset($data['gSTExemptTotal']) ? $data['gSTExemptTotal'] : null;
+        $this->container['gSTTaxableTotal'] = isset($data['gSTTaxableTotal']) ? $data['gSTTaxableTotal'] : null;
+        $this->container['hold'] = isset($data['hold']) ? $data['hold'] : null;
         $this->container['overrideTaxAmount'] = isset($data['overrideTaxAmount']) ? $data['overrideTaxAmount'] : null;
+        $this->container['owner'] = isset($data['owner']) ? $data['owner'] : null;
+        $this->container['referenceNbr'] = isset($data['referenceNbr']) ? $data['referenceNbr'] : null;
+        $this->container['roundingDiff'] = isset($data['roundingDiff']) ? $data['roundingDiff'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
+        $this->container['taxAmount'] = isset($data['taxAmount']) ? $data['taxAmount'] : null;
+        $this->container['taxCalculation'] = isset($data['taxCalculation']) ? $data['taxCalculation'] : null;
+        $this->container['taxTotal'] = isset($data['taxTotal']) ? $data['taxTotal'] : null;
+        $this->container['tranDate'] = isset($data['tranDate']) ? $data['tranDate'] : null;
+        $this->container['tranType'] = isset($data['tranType']) ? $data['tranType'] : null;
     }
 
     /**
@@ -343,49 +343,25 @@ class CashTransactionModel extends EntityModel
 
 
     /**
-     * Gets referenceNbr
+     * Gets amount
      *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
      */
-    public function getReferenceNbr()
+    public function getAmount()
     {
-        return $this->container['referenceNbr'];
+        return $this->container['amount'];
     }
 
     /**
-     * Sets referenceNbr
+     * Sets amount
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $referenceNbr referenceNbr
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $amount amount
      *
      * @return $this
      */
-    public function setReferenceNbr($referenceNbr)
+    public function setAmount($amount)
     {
-        $this->container['referenceNbr'] = $referenceNbr;
-
-        return $this;
-    }
-
-    /**
-     * Gets tranType
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getTranType()
-    {
-        return $this->container['tranType'];
-    }
-
-    /**
-     * Sets tranType
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $tranType tranType
-     *
-     * @return $this
-     */
-    public function setTranType($tranType)
-    {
-        $this->container['tranType'] = $tranType;
+        $this->container['amount'] = $amount;
 
         return $this;
     }
@@ -487,150 +463,6 @@ class CashTransactionModel extends EntityModel
     }
 
     /**
-     * Gets taxAmount
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
-     */
-    public function getTaxAmount()
-    {
-        return $this->container['taxAmount'];
-    }
-
-    /**
-     * Sets taxAmount
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $taxAmount taxAmount
-     *
-     * @return $this
-     */
-    public function setTaxAmount($taxAmount)
-    {
-        $this->container['taxAmount'] = $taxAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets roundingDiff
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
-     */
-    public function getRoundingDiff()
-    {
-        return $this->container['roundingDiff'];
-    }
-
-    /**
-     * Sets roundingDiff
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $roundingDiff roundingDiff
-     *
-     * @return $this
-     */
-    public function setRoundingDiff($roundingDiff)
-    {
-        $this->container['roundingDiff'] = $roundingDiff;
-
-        return $this;
-    }
-
-    /**
-     * Gets taxTotal
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
-     */
-    public function getTaxTotal()
-    {
-        return $this->container['taxTotal'];
-    }
-
-    /**
-     * Sets taxTotal
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $taxTotal taxTotal
-     *
-     * @return $this
-     */
-    public function setTaxTotal($taxTotal)
-    {
-        $this->container['taxTotal'] = $taxTotal;
-
-        return $this;
-    }
-
-    /**
-     * Gets amount
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
-     */
-    public function getAmount()
-    {
-        return $this->container['amount'];
-    }
-
-    /**
-     * Sets amount
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $amount amount
-     *
-     * @return $this
-     */
-    public function setAmount($amount)
-    {
-        $this->container['amount'] = $amount;
-
-        return $this;
-    }
-
-    /**
-     * Gets gSTExemptTotal
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
-     */
-    public function getGSTExemptTotal()
-    {
-        return $this->container['gSTExemptTotal'];
-    }
-
-    /**
-     * Sets gSTExemptTotal
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $gSTExemptTotal gSTExemptTotal
-     *
-     * @return $this
-     */
-    public function setGSTExemptTotal($gSTExemptTotal)
-    {
-        $this->container['gSTExemptTotal'] = $gSTExemptTotal;
-
-        return $this;
-    }
-
-    /**
-     * Gets gSTTaxableTotal
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
-     */
-    public function getGSTTaxableTotal()
-    {
-        return $this->container['gSTTaxableTotal'];
-    }
-
-    /**
-     * Sets gSTTaxableTotal
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $gSTTaxableTotal gSTTaxableTotal
-     *
-     * @return $this
-     */
-    public function setGSTTaxableTotal($gSTTaxableTotal)
-    {
-        $this->container['gSTTaxableTotal'] = $gSTTaxableTotal;
-
-        return $this;
-    }
-
-    /**
      * Gets curyViewState
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel
@@ -650,198 +482,6 @@ class CashTransactionModel extends EntityModel
     public function setCuryViewState($curyViewState)
     {
         $this->container['curyViewState'] = $curyViewState;
-
-        return $this;
-    }
-
-    /**
-     * Gets disbursementReceipt
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getDisbursementReceipt()
-    {
-        return $this->container['disbursementReceipt'];
-    }
-
-    /**
-     * Sets disbursementReceipt
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $disbursementReceipt disbursementReceipt
-     *
-     * @return $this
-     */
-    public function setDisbursementReceipt($disbursementReceipt)
-    {
-        $this->container['disbursementReceipt'] = $disbursementReceipt;
-
-        return $this;
-    }
-
-    /**
-     * Gets owner
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getOwner()
-    {
-        return $this->container['owner'];
-    }
-
-    /**
-     * Sets owner
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $owner owner
-     *
-     * @return $this
-     */
-    public function setOwner($owner)
-    {
-        $this->container['owner'] = $owner;
-
-        return $this;
-    }
-
-    /**
-     * Gets entryType
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getEntryType()
-    {
-        return $this->container['entryType'];
-    }
-
-    /**
-     * Sets entryType
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $entryType entryType
-     *
-     * @return $this
-     */
-    public function setEntryType($entryType)
-    {
-        $this->container['entryType'] = $entryType;
-
-        return $this;
-    }
-
-    /**
-     * Gets documentRef
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getDocumentRef()
-    {
-        return $this->container['documentRef'];
-    }
-
-    /**
-     * Sets documentRef
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $documentRef documentRef
-     *
-     * @return $this
-     */
-    public function setDocumentRef($documentRef)
-    {
-        $this->container['documentRef'] = $documentRef;
-
-        return $this;
-    }
-
-    /**
-     * Gets finPeriod
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getFinPeriod()
-    {
-        return $this->container['finPeriod'];
-    }
-
-    /**
-     * Sets finPeriod
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $finPeriod finPeriod
-     *
-     * @return $this
-     */
-    public function setFinPeriod($finPeriod)
-    {
-        $this->container['finPeriod'] = $finPeriod;
-
-        return $this;
-    }
-
-    /**
-     * Gets hold
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel
-     */
-    public function getHold()
-    {
-        return $this->container['hold'];
-    }
-
-    /**
-     * Sets hold
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel $hold hold
-     *
-     * @return $this
-     */
-    public function setHold($hold)
-    {
-        $this->container['hold'] = $hold;
-
-        return $this;
-    }
-
-    /**
-     * Gets status
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getStatus()
-    {
-        return $this->container['status'];
-    }
-
-    /**
-     * Sets status
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $status status
-     *
-     * @return $this
-     */
-    public function setStatus($status)
-    {
-        $this->container['status'] = $status;
-
-        return $this;
-    }
-
-    /**
-     * Gets tranDate
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel
-     */
-    public function getTranDate()
-    {
-        return $this->container['tranDate'];
-    }
-
-    /**
-     * Sets tranDate
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel $tranDate tranDate
-     *
-     * @return $this
-     */
-    public function setTranDate($tranDate)
-    {
-        $this->container['tranDate'] = $tranDate;
 
         return $this;
     }
@@ -895,25 +535,169 @@ class CashTransactionModel extends EntityModel
     }
 
     /**
-     * Gets taxCalculation
+     * Gets disbursementReceipt
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
      */
-    public function getTaxCalculation()
+    public function getDisbursementReceipt()
     {
-        return $this->container['taxCalculation'];
+        return $this->container['disbursementReceipt'];
     }
 
     /**
-     * Sets taxCalculation
+     * Sets disbursementReceipt
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $taxCalculation taxCalculation
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $disbursementReceipt disbursementReceipt
      *
      * @return $this
      */
-    public function setTaxCalculation($taxCalculation)
+    public function setDisbursementReceipt($disbursementReceipt)
     {
-        $this->container['taxCalculation'] = $taxCalculation;
+        $this->container['disbursementReceipt'] = $disbursementReceipt;
+
+        return $this;
+    }
+
+    /**
+     * Gets documentRef
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getDocumentRef()
+    {
+        return $this->container['documentRef'];
+    }
+
+    /**
+     * Sets documentRef
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $documentRef documentRef
+     *
+     * @return $this
+     */
+    public function setDocumentRef($documentRef)
+    {
+        $this->container['documentRef'] = $documentRef;
+
+        return $this;
+    }
+
+    /**
+     * Gets entryType
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getEntryType()
+    {
+        return $this->container['entryType'];
+    }
+
+    /**
+     * Sets entryType
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $entryType entryType
+     *
+     * @return $this
+     */
+    public function setEntryType($entryType)
+    {
+        $this->container['entryType'] = $entryType;
+
+        return $this;
+    }
+
+    /**
+     * Gets finPeriod
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getFinPeriod()
+    {
+        return $this->container['finPeriod'];
+    }
+
+    /**
+     * Sets finPeriod
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $finPeriod finPeriod
+     *
+     * @return $this
+     */
+    public function setFinPeriod($finPeriod)
+    {
+        $this->container['finPeriod'] = $finPeriod;
+
+        return $this;
+    }
+
+    /**
+     * Gets gSTExemptTotal
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     */
+    public function getGSTExemptTotal()
+    {
+        return $this->container['gSTExemptTotal'];
+    }
+
+    /**
+     * Sets gSTExemptTotal
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $gSTExemptTotal gSTExemptTotal
+     *
+     * @return $this
+     */
+    public function setGSTExemptTotal($gSTExemptTotal)
+    {
+        $this->container['gSTExemptTotal'] = $gSTExemptTotal;
+
+        return $this;
+    }
+
+    /**
+     * Gets gSTTaxableTotal
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     */
+    public function getGSTTaxableTotal()
+    {
+        return $this->container['gSTTaxableTotal'];
+    }
+
+    /**
+     * Sets gSTTaxableTotal
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $gSTTaxableTotal gSTTaxableTotal
+     *
+     * @return $this
+     */
+    public function setGSTTaxableTotal($gSTTaxableTotal)
+    {
+        $this->container['gSTTaxableTotal'] = $gSTTaxableTotal;
+
+        return $this;
+    }
+
+    /**
+     * Gets hold
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel
+     */
+    public function getHold()
+    {
+        return $this->container['hold'];
+    }
+
+    /**
+     * Sets hold
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel $hold hold
+     *
+     * @return $this
+     */
+    public function setHold($hold)
+    {
+        $this->container['hold'] = $hold;
 
         return $this;
     }
@@ -938,6 +722,222 @@ class CashTransactionModel extends EntityModel
     public function setOverrideTaxAmount($overrideTaxAmount)
     {
         $this->container['overrideTaxAmount'] = $overrideTaxAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets owner
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getOwner()
+    {
+        return $this->container['owner'];
+    }
+
+    /**
+     * Sets owner
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $owner owner
+     *
+     * @return $this
+     */
+    public function setOwner($owner)
+    {
+        $this->container['owner'] = $owner;
+
+        return $this;
+    }
+
+    /**
+     * Gets referenceNbr
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getReferenceNbr()
+    {
+        return $this->container['referenceNbr'];
+    }
+
+    /**
+     * Sets referenceNbr
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $referenceNbr referenceNbr
+     *
+     * @return $this
+     */
+    public function setReferenceNbr($referenceNbr)
+    {
+        $this->container['referenceNbr'] = $referenceNbr;
+
+        return $this;
+    }
+
+    /**
+     * Gets roundingDiff
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     */
+    public function getRoundingDiff()
+    {
+        return $this->container['roundingDiff'];
+    }
+
+    /**
+     * Sets roundingDiff
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $roundingDiff roundingDiff
+     *
+     * @return $this
+     */
+    public function setRoundingDiff($roundingDiff)
+    {
+        $this->container['roundingDiff'] = $roundingDiff;
+
+        return $this;
+    }
+
+    /**
+     * Gets status
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getStatus()
+    {
+        return $this->container['status'];
+    }
+
+    /**
+     * Sets status
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $status status
+     *
+     * @return $this
+     */
+    public function setStatus($status)
+    {
+        $this->container['status'] = $status;
+
+        return $this;
+    }
+
+    /**
+     * Gets taxAmount
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     */
+    public function getTaxAmount()
+    {
+        return $this->container['taxAmount'];
+    }
+
+    /**
+     * Sets taxAmount
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $taxAmount taxAmount
+     *
+     * @return $this
+     */
+    public function setTaxAmount($taxAmount)
+    {
+        $this->container['taxAmount'] = $taxAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets taxCalculation
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getTaxCalculation()
+    {
+        return $this->container['taxCalculation'];
+    }
+
+    /**
+     * Sets taxCalculation
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $taxCalculation taxCalculation
+     *
+     * @return $this
+     */
+    public function setTaxCalculation($taxCalculation)
+    {
+        $this->container['taxCalculation'] = $taxCalculation;
+
+        return $this;
+    }
+
+    /**
+     * Gets taxTotal
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     */
+    public function getTaxTotal()
+    {
+        return $this->container['taxTotal'];
+    }
+
+    /**
+     * Sets taxTotal
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $taxTotal taxTotal
+     *
+     * @return $this
+     */
+    public function setTaxTotal($taxTotal)
+    {
+        $this->container['taxTotal'] = $taxTotal;
+
+        return $this;
+    }
+
+    /**
+     * Gets tranDate
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel
+     */
+    public function getTranDate()
+    {
+        return $this->container['tranDate'];
+    }
+
+    /**
+     * Sets tranDate
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel $tranDate tranDate
+     *
+     * @return $this
+     */
+    public function setTranDate($tranDate)
+    {
+        $this->container['tranDate'] = $tranDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets tranType
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getTranType()
+    {
+        return $this->container['tranType'];
+    }
+
+    /**
+     * Sets tranType
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $tranType tranType
+     *
+     * @return $this
+     */
+    public function setTranType($tranType)
+    {
+        $this->container['tranType'] = $tranType;
 
         return $this;
     }

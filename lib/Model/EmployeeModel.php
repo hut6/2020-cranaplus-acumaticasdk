@@ -55,8 +55,8 @@ class EmployeeModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'value' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'description' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'value' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'branchID' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'contact' => '\Hut6\CranaplusAcumaticaSdk\Model\ContactModel',
         'currencyID' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
@@ -78,8 +78,8 @@ class EmployeeModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'value' => null,
         'description' => null,
+        'value' => null,
         'branchID' => null,
         'contact' => null,
         'currencyID' => null,
@@ -122,8 +122,8 @@ class EmployeeModel extends EntityModel
      * @var string[]
      */
     protected static $attributeMap = [
-        'value' => 'Value',
         'description' => 'Description',
+        'value' => 'Value',
         'branchID' => 'BranchID',
         'contact' => 'Contact',
         'currencyID' => 'CurrencyID',
@@ -145,8 +145,8 @@ class EmployeeModel extends EntityModel
      * @var string[]
      */
     protected static $setters = [
-        'value' => 'setValue',
         'description' => 'setDescription',
+        'value' => 'setValue',
         'branchID' => 'setBranchID',
         'contact' => 'setContact',
         'currencyID' => 'setCurrencyID',
@@ -168,8 +168,8 @@ class EmployeeModel extends EntityModel
      * @var string[]
      */
     protected static $getters = [
-        'value' => 'getValue',
         'description' => 'getDescription',
+        'value' => 'getValue',
         'branchID' => 'getBranchID',
         'contact' => 'getContact',
         'currencyID' => 'getCurrencyID',
@@ -241,8 +241,8 @@ class EmployeeModel extends EntityModel
     {
         parent::__construct($data);
 
-        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
         $this->container['branchID'] = isset($data['branchID']) ? $data['branchID'] : null;
         $this->container['contact'] = isset($data['contact']) ? $data['contact'] : null;
         $this->container['currencyID'] = isset($data['currencyID']) ? $data['currencyID'] : null;
@@ -283,30 +283,6 @@ class EmployeeModel extends EntityModel
 
 
     /**
-     * Gets value
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getValue()
-    {
-        return $this->container['value'];
-    }
-
-    /**
-     * Sets value
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $value value
-     *
-     * @return $this
-     */
-    public function setValue($value)
-    {
-        $this->container['value'] = $value;
-
-        return $this;
-    }
-
-    /**
      * Gets description
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
@@ -326,6 +302,30 @@ class EmployeeModel extends EntityModel
     public function setDescription($description)
     {
         $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets value
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getValue()
+    {
+        return $this->container['value'];
+    }
+
+    /**
+     * Sets value
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $value value
+     *
+     * @return $this
+     */
+    public function setValue($value)
+    {
+        $this->container['value'] = $value;
 
         return $this;
     }

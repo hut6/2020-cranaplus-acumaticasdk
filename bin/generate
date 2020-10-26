@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run --rm  -u $UID -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i "https://crana.myobadvanced.com/(W(6))/entity/Crana/17.200.001/swagger.json?company=CRANA_INTEG_DEV" -o /local/ -l php -c /local/bin/swagger-config.json
+docker run --rm  -u $UID -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i "https://crana.myobadvanced.com/entity/Crana/17.200.001/swagger.json?company=Crana_Live" -o /local/ -l php -c /local/bin/swagger-config.json
 
 rm -rf docs
 rm -rf lib

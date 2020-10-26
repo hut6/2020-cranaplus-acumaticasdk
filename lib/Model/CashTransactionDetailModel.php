@@ -55,24 +55,24 @@ class CashTransactionDetailModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'offsetAccount' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'accountDescription' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'adjRefNbr' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'type' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'branch' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'offsetCashAccount' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'costCode' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'amount' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
-        'price' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'branch' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'costCode' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'description' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'itemID' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'lineNbr' => '\Hut6\CranaplusAcumaticaSdk\Model\IntValueModel',
         'nonBillable' => '\Hut6\CranaplusAcumaticaSdk\Model\BooleanValueModel',
-        'project' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'quantity' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'offsetAccount' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'offsetCashAccount' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'offsetSubaccount' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'price' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'project' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'projectTask' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'quantity' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
         'taxCategory' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'description' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'type' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'uOM' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel'
     ];
 
@@ -82,24 +82,24 @@ class CashTransactionDetailModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'offsetAccount' => null,
         'accountDescription' => null,
         'adjRefNbr' => null,
-        'type' => null,
-        'branch' => null,
-        'offsetCashAccount' => null,
-        'costCode' => null,
         'amount' => null,
-        'price' => null,
+        'branch' => null,
+        'costCode' => null,
+        'description' => null,
         'itemID' => null,
         'lineNbr' => null,
         'nonBillable' => null,
-        'project' => null,
-        'quantity' => null,
+        'offsetAccount' => null,
+        'offsetCashAccount' => null,
         'offsetSubaccount' => null,
+        'price' => null,
+        'project' => null,
         'projectTask' => null,
+        'quantity' => null,
         'taxCategory' => null,
-        'description' => null,
+        'type' => null,
         'uOM' => null
     ];
 
@@ -130,24 +130,24 @@ class CashTransactionDetailModel extends EntityModel
      * @var string[]
      */
     protected static $attributeMap = [
-        'offsetAccount' => 'OffsetAccount',
         'accountDescription' => 'AccountDescription',
         'adjRefNbr' => 'AdjRefNbr',
-        'type' => 'Type',
-        'branch' => 'Branch',
-        'offsetCashAccount' => 'OffsetCashAccount',
-        'costCode' => 'CostCode',
         'amount' => 'Amount',
-        'price' => 'Price',
+        'branch' => 'Branch',
+        'costCode' => 'CostCode',
+        'description' => 'Description',
         'itemID' => 'ItemID',
         'lineNbr' => 'LineNbr',
         'nonBillable' => 'NonBillable',
-        'project' => 'Project',
-        'quantity' => 'Quantity',
+        'offsetAccount' => 'OffsetAccount',
+        'offsetCashAccount' => 'OffsetCashAccount',
         'offsetSubaccount' => 'OffsetSubaccount',
+        'price' => 'Price',
+        'project' => 'Project',
         'projectTask' => 'ProjectTask',
+        'quantity' => 'Quantity',
         'taxCategory' => 'TaxCategory',
-        'description' => 'Description',
+        'type' => 'Type',
         'uOM' => 'UOM'
     ];
 
@@ -157,24 +157,24 @@ class CashTransactionDetailModel extends EntityModel
      * @var string[]
      */
     protected static $setters = [
-        'offsetAccount' => 'setOffsetAccount',
         'accountDescription' => 'setAccountDescription',
         'adjRefNbr' => 'setAdjRefNbr',
-        'type' => 'setType',
-        'branch' => 'setBranch',
-        'offsetCashAccount' => 'setOffsetCashAccount',
-        'costCode' => 'setCostCode',
         'amount' => 'setAmount',
-        'price' => 'setPrice',
+        'branch' => 'setBranch',
+        'costCode' => 'setCostCode',
+        'description' => 'setDescription',
         'itemID' => 'setItemID',
         'lineNbr' => 'setLineNbr',
         'nonBillable' => 'setNonBillable',
-        'project' => 'setProject',
-        'quantity' => 'setQuantity',
+        'offsetAccount' => 'setOffsetAccount',
+        'offsetCashAccount' => 'setOffsetCashAccount',
         'offsetSubaccount' => 'setOffsetSubaccount',
+        'price' => 'setPrice',
+        'project' => 'setProject',
         'projectTask' => 'setProjectTask',
+        'quantity' => 'setQuantity',
         'taxCategory' => 'setTaxCategory',
-        'description' => 'setDescription',
+        'type' => 'setType',
         'uOM' => 'setUOM'
     ];
 
@@ -184,24 +184,24 @@ class CashTransactionDetailModel extends EntityModel
      * @var string[]
      */
     protected static $getters = [
-        'offsetAccount' => 'getOffsetAccount',
         'accountDescription' => 'getAccountDescription',
         'adjRefNbr' => 'getAdjRefNbr',
-        'type' => 'getType',
-        'branch' => 'getBranch',
-        'offsetCashAccount' => 'getOffsetCashAccount',
-        'costCode' => 'getCostCode',
         'amount' => 'getAmount',
-        'price' => 'getPrice',
+        'branch' => 'getBranch',
+        'costCode' => 'getCostCode',
+        'description' => 'getDescription',
         'itemID' => 'getItemID',
         'lineNbr' => 'getLineNbr',
         'nonBillable' => 'getNonBillable',
-        'project' => 'getProject',
-        'quantity' => 'getQuantity',
+        'offsetAccount' => 'getOffsetAccount',
+        'offsetCashAccount' => 'getOffsetCashAccount',
         'offsetSubaccount' => 'getOffsetSubaccount',
+        'price' => 'getPrice',
+        'project' => 'getProject',
         'projectTask' => 'getProjectTask',
+        'quantity' => 'getQuantity',
         'taxCategory' => 'getTaxCategory',
-        'description' => 'getDescription',
+        'type' => 'getType',
         'uOM' => 'getUOM'
     ];
 
@@ -261,24 +261,24 @@ class CashTransactionDetailModel extends EntityModel
     {
         parent::__construct($data);
 
-        $this->container['offsetAccount'] = isset($data['offsetAccount']) ? $data['offsetAccount'] : null;
         $this->container['accountDescription'] = isset($data['accountDescription']) ? $data['accountDescription'] : null;
         $this->container['adjRefNbr'] = isset($data['adjRefNbr']) ? $data['adjRefNbr'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['branch'] = isset($data['branch']) ? $data['branch'] : null;
-        $this->container['offsetCashAccount'] = isset($data['offsetCashAccount']) ? $data['offsetCashAccount'] : null;
-        $this->container['costCode'] = isset($data['costCode']) ? $data['costCode'] : null;
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['price'] = isset($data['price']) ? $data['price'] : null;
+        $this->container['branch'] = isset($data['branch']) ? $data['branch'] : null;
+        $this->container['costCode'] = isset($data['costCode']) ? $data['costCode'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['itemID'] = isset($data['itemID']) ? $data['itemID'] : null;
         $this->container['lineNbr'] = isset($data['lineNbr']) ? $data['lineNbr'] : null;
         $this->container['nonBillable'] = isset($data['nonBillable']) ? $data['nonBillable'] : null;
-        $this->container['project'] = isset($data['project']) ? $data['project'] : null;
-        $this->container['quantity'] = isset($data['quantity']) ? $data['quantity'] : null;
+        $this->container['offsetAccount'] = isset($data['offsetAccount']) ? $data['offsetAccount'] : null;
+        $this->container['offsetCashAccount'] = isset($data['offsetCashAccount']) ? $data['offsetCashAccount'] : null;
         $this->container['offsetSubaccount'] = isset($data['offsetSubaccount']) ? $data['offsetSubaccount'] : null;
+        $this->container['price'] = isset($data['price']) ? $data['price'] : null;
+        $this->container['project'] = isset($data['project']) ? $data['project'] : null;
         $this->container['projectTask'] = isset($data['projectTask']) ? $data['projectTask'] : null;
+        $this->container['quantity'] = isset($data['quantity']) ? $data['quantity'] : null;
         $this->container['taxCategory'] = isset($data['taxCategory']) ? $data['taxCategory'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['uOM'] = isset($data['uOM']) ? $data['uOM'] : null;
     }
 
@@ -305,30 +305,6 @@ class CashTransactionDetailModel extends EntityModel
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets offsetAccount
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getOffsetAccount()
-    {
-        return $this->container['offsetAccount'];
-    }
-
-    /**
-     * Sets offsetAccount
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $offsetAccount offsetAccount
-     *
-     * @return $this
-     */
-    public function setOffsetAccount($offsetAccount)
-    {
-        $this->container['offsetAccount'] = $offsetAccount;
-
-        return $this;
-    }
 
     /**
      * Gets accountDescription
@@ -379,25 +355,25 @@ class CashTransactionDetailModel extends EntityModel
     }
 
     /**
-     * Gets type
+     * Gets amount
      *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
      */
-    public function getType()
+    public function getAmount()
     {
-        return $this->container['type'];
+        return $this->container['amount'];
     }
 
     /**
-     * Sets type
+     * Sets amount
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $type type
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $amount amount
      *
      * @return $this
      */
-    public function setType($type)
+    public function setAmount($amount)
     {
-        $this->container['type'] = $type;
+        $this->container['amount'] = $amount;
 
         return $this;
     }
@@ -427,30 +403,6 @@ class CashTransactionDetailModel extends EntityModel
     }
 
     /**
-     * Gets offsetCashAccount
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
-     */
-    public function getOffsetCashAccount()
-    {
-        return $this->container['offsetCashAccount'];
-    }
-
-    /**
-     * Sets offsetCashAccount
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $offsetCashAccount offsetCashAccount
-     *
-     * @return $this
-     */
-    public function setOffsetCashAccount($offsetCashAccount)
-    {
-        $this->container['offsetCashAccount'] = $offsetCashAccount;
-
-        return $this;
-    }
-
-    /**
      * Gets costCode
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
@@ -475,49 +427,25 @@ class CashTransactionDetailModel extends EntityModel
     }
 
     /**
-     * Gets amount
+     * Gets description
      *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
      */
-    public function getAmount()
+    public function getDescription()
     {
-        return $this->container['amount'];
+        return $this->container['description'];
     }
 
     /**
-     * Sets amount
+     * Sets description
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $amount amount
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $description description
      *
      * @return $this
      */
-    public function setAmount($amount)
+    public function setDescription($description)
     {
-        $this->container['amount'] = $amount;
-
-        return $this;
-    }
-
-    /**
-     * Gets price
-     *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
-     */
-    public function getPrice()
-    {
-        return $this->container['price'];
-    }
-
-    /**
-     * Sets price
-     *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $price price
-     *
-     * @return $this
-     */
-    public function setPrice($price)
-    {
-        $this->container['price'] = $price;
+        $this->container['description'] = $description;
 
         return $this;
     }
@@ -595,49 +523,49 @@ class CashTransactionDetailModel extends EntityModel
     }
 
     /**
-     * Gets project
+     * Gets offsetAccount
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
      */
-    public function getProject()
+    public function getOffsetAccount()
     {
-        return $this->container['project'];
+        return $this->container['offsetAccount'];
     }
 
     /**
-     * Sets project
+     * Sets offsetAccount
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $project project
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $offsetAccount offsetAccount
      *
      * @return $this
      */
-    public function setProject($project)
+    public function setOffsetAccount($offsetAccount)
     {
-        $this->container['project'] = $project;
+        $this->container['offsetAccount'] = $offsetAccount;
 
         return $this;
     }
 
     /**
-     * Gets quantity
+     * Gets offsetCashAccount
      *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
      */
-    public function getQuantity()
+    public function getOffsetCashAccount()
     {
-        return $this->container['quantity'];
+        return $this->container['offsetCashAccount'];
     }
 
     /**
-     * Sets quantity
+     * Sets offsetCashAccount
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $quantity quantity
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $offsetCashAccount offsetCashAccount
      *
      * @return $this
      */
-    public function setQuantity($quantity)
+    public function setOffsetCashAccount($offsetCashAccount)
     {
-        $this->container['quantity'] = $quantity;
+        $this->container['offsetCashAccount'] = $offsetCashAccount;
 
         return $this;
     }
@@ -667,6 +595,54 @@ class CashTransactionDetailModel extends EntityModel
     }
 
     /**
+     * Gets price
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     */
+    public function getPrice()
+    {
+        return $this->container['price'];
+    }
+
+    /**
+     * Sets price
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $price price
+     *
+     * @return $this
+     */
+    public function setPrice($price)
+    {
+        $this->container['price'] = $price;
+
+        return $this;
+    }
+
+    /**
+     * Gets project
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getProject()
+    {
+        return $this->container['project'];
+    }
+
+    /**
+     * Sets project
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $project project
+     *
+     * @return $this
+     */
+    public function setProject($project)
+    {
+        $this->container['project'] = $project;
+
+        return $this;
+    }
+
+    /**
      * Gets projectTask
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
@@ -686,6 +662,30 @@ class CashTransactionDetailModel extends EntityModel
     public function setProjectTask($projectTask)
     {
         $this->container['projectTask'] = $projectTask;
+
+        return $this;
+    }
+
+    /**
+     * Gets quantity
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     */
+    public function getQuantity()
+    {
+        return $this->container['quantity'];
+    }
+
+    /**
+     * Sets quantity
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $quantity quantity
+     *
+     * @return $this
+     */
+    public function setQuantity($quantity)
+    {
+        $this->container['quantity'] = $quantity;
 
         return $this;
     }
@@ -715,25 +715,25 @@ class CashTransactionDetailModel extends EntityModel
     }
 
     /**
-     * Gets description
+     * Gets type
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
      */
-    public function getDescription()
+    public function getType()
     {
-        return $this->container['description'];
+        return $this->container['type'];
     }
 
     /**
-     * Sets description
+     * Sets type
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $description description
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $type type
      *
      * @return $this
      */
-    public function setDescription($description)
+    public function setType($type)
     {
-        $this->container['description'] = $description;
+        $this->container['type'] = $type;
 
         return $this;
     }

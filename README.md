@@ -593,6 +593,14 @@ Class | Method | HTTP request | Description
 *PurchaseReceiptApi* | [**purchaseReceiptInvokeActionReleasePurchaseReceipt**](docs/Api/PurchaseReceiptApi.md#purchasereceiptinvokeactionreleasepurchasereceipt) | **POST** /PurchaseReceipt/ReleasePurchaseReceipt | Performs an action in the system.
 *PurchaseReceiptApi* | [**purchaseReceiptPutEntity**](docs/Api/PurchaseReceiptApi.md#purchasereceiptputentity) | **PUT** /PurchaseReceipt | Creates a record or updates an existing record.
 *PurchaseReceiptApi* | [**purchaseReceiptPutFile**](docs/Api/PurchaseReceiptApi.md#purchasereceiptputfile) | **PUT** /PurchaseReceipt/{ids}/files/{filename} | Attaches a file to a record.
+*RawDataForReportApi* | [**rawDataForReportDeleteById**](docs/Api/RawDataForReportApi.md#rawdataforreportdeletebyid) | **DELETE** /RawDataForReport/{id} | Deletes the record by its session identifier.
+*RawDataForReportApi* | [**rawDataForReportDeleteByKeys**](docs/Api/RawDataForReportApi.md#rawdataforreportdeletebykeys) | **DELETE** /RawDataForReport/{ids} | Deletes the record by the values of its key fields.
+*RawDataForReportApi* | [**rawDataForReportGetAdHocSchema**](docs/Api/RawDataForReportApi.md#rawdataforreportgetadhocschema) | **GET** /RawDataForReport/$adHocSchema | Retrieves the schema of custom fields of the entity from the system.
+*RawDataForReportApi* | [**rawDataForReportGetById**](docs/Api/RawDataForReportApi.md#rawdataforreportgetbyid) | **GET** /RawDataForReport/{id} | Retrieves a record by the value of the session entity ID from the system.
+*RawDataForReportApi* | [**rawDataForReportGetByKeys**](docs/Api/RawDataForReportApi.md#rawdataforreportgetbykeys) | **GET** /RawDataForReport/{ids} | Retrieves a record by the values of its key fields from the system.
+*RawDataForReportApi* | [**rawDataForReportGetList**](docs/Api/RawDataForReportApi.md#rawdataforreportgetlist) | **GET** /RawDataForReport | Retrieves records that satisfy the specified conditions from the system.
+*RawDataForReportApi* | [**rawDataForReportPutEntity**](docs/Api/RawDataForReportApi.md#rawdataforreportputentity) | **PUT** /RawDataForReport | Creates a record or updates an existing record.
+*RawDataForReportApi* | [**rawDataForReportPutFile**](docs/Api/RawDataForReportApi.md#rawdataforreportputfile) | **PUT** /RawDataForReport/{ids}/files/{filename} | Attaches a file to a record.
 *ReportingSettingsApi* | [**reportingSettingsDeleteById**](docs/Api/ReportingSettingsApi.md#reportingsettingsdeletebyid) | **DELETE** /ReportingSettings/{id} | Deletes the record by its session identifier.
 *ReportingSettingsApi* | [**reportingSettingsDeleteByKeys**](docs/Api/ReportingSettingsApi.md#reportingsettingsdeletebykeys) | **DELETE** /ReportingSettings/{ids} | Deletes the record by the values of its key fields.
 *ReportingSettingsApi* | [**reportingSettingsGetAdHocSchema**](docs/Api/ReportingSettingsApi.md#reportingsettingsgetadhocschema) | **GET** /ReportingSettings/$adHocSchema | Retrieves the schema of custom fields of the entity from the system.
@@ -989,6 +997,7 @@ Class | Method | HTTP request | Description
  - [ExportCardEventModel](docs/Model/ExportCardEventModel.md)
  - [FOBPointModel](docs/Model/FOBPointModel.md)
  - [FileLinkModel](docs/Model/FileLinkModel.md)
+ - [FinancialDataModel](docs/Model/FinancialDataModel.md)
  - [FinancialPeriodDetailModel](docs/Model/FinancialPeriodDetailModel.md)
  - [FinancialPeriodModel](docs/Model/FinancialPeriodModel.md)
  - [FinancialSettingsModel](docs/Model/FinancialSettingsModel.md)
@@ -1083,6 +1092,7 @@ Class | Method | HTTP request | Description
  - [PurchaseReceiptDetailModel](docs/Model/PurchaseReceiptDetailModel.md)
  - [PurchaseReceiptModel](docs/Model/PurchaseReceiptModel.md)
  - [PurchaseSettingsModel](docs/Model/PurchaseSettingsModel.md)
+ - [RawDataForReportModel](docs/Model/RawDataForReportModel.md)
  - [RejectInvitationEventModel](docs/Model/RejectInvitationEventModel.md)
  - [RelationDetailModel](docs/Model/RelationDetailModel.md)
  - [ReleaseAdjustmentModel](docs/Model/ReleaseAdjustmentModel.md)
