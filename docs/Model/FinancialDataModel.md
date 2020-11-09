@@ -19,6 +19,8 @@ Name | Type | Description | Notes
 **module** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 
 **debit** | [**\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel**](DecimalValueModel.md) |  | [optional] 
 **credit** | [**\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel**](DecimalValueModel.md) |  | [optional] 
+**createdDate** | [**\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel**](DateTimeValueModel.md) |  | [optional] 
+**transactionType** | [**\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel**](StringValueModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

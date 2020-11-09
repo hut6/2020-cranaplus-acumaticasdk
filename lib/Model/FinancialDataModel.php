@@ -70,7 +70,9 @@ class FinancialDataModel extends EntityModel
         'refNumber' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'module' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'debit' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
-        'credit' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel'
+        'credit' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'createdDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel',
+        'transactionType' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel'
     ];
 
     /**
@@ -94,7 +96,9 @@ class FinancialDataModel extends EntityModel
         'refNumber' => null,
         'module' => null,
         'debit' => null,
-        'credit' => null
+        'credit' => null,
+        'createdDate' => null,
+        'transactionType' => null
     ];
 
     /**
@@ -139,7 +143,9 @@ class FinancialDataModel extends EntityModel
         'refNumber' => 'RefNumber',
         'module' => 'Module',
         'debit' => 'Debit',
-        'credit' => 'Credit'
+        'credit' => 'Credit',
+        'createdDate' => 'CreatedDate',
+        'transactionType' => 'TransactionType'
     ];
 
     /**
@@ -163,7 +169,9 @@ class FinancialDataModel extends EntityModel
         'refNumber' => 'setRefNumber',
         'module' => 'setModule',
         'debit' => 'setDebit',
-        'credit' => 'setCredit'
+        'credit' => 'setCredit',
+        'createdDate' => 'setCreatedDate',
+        'transactionType' => 'setTransactionType'
     ];
 
     /**
@@ -187,7 +195,9 @@ class FinancialDataModel extends EntityModel
         'refNumber' => 'getRefNumber',
         'module' => 'getModule',
         'debit' => 'getDebit',
-        'credit' => 'getCredit'
+        'credit' => 'getCredit',
+        'createdDate' => 'getCreatedDate',
+        'transactionType' => 'getTransactionType'
     ];
 
     /**
@@ -262,6 +272,8 @@ class FinancialDataModel extends EntityModel
         $this->container['module'] = isset($data['module']) ? $data['module'] : null;
         $this->container['debit'] = isset($data['debit']) ? $data['debit'] : null;
         $this->container['credit'] = isset($data['credit']) ? $data['credit'] : null;
+        $this->container['createdDate'] = isset($data['createdDate']) ? $data['createdDate'] : null;
+        $this->container['transactionType'] = isset($data['transactionType']) ? $data['transactionType'] : null;
     }
 
     /**
@@ -668,6 +680,54 @@ class FinancialDataModel extends EntityModel
     public function setCredit($credit)
     {
         $this->container['credit'] = $credit;
+
+        return $this;
+    }
+
+    /**
+     * Gets createdDate
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel
+     */
+    public function getCreatedDate()
+    {
+        return $this->container['createdDate'];
+    }
+
+    /**
+     * Sets createdDate
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel $createdDate createdDate
+     *
+     * @return $this
+     */
+    public function setCreatedDate($createdDate)
+    {
+        $this->container['createdDate'] = $createdDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets transactionType
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getTransactionType()
+    {
+        return $this->container['transactionType'];
+    }
+
+    /**
+     * Sets transactionType
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $transactionType transactionType
+     *
+     * @return $this
+     */
+    public function setTransactionType($transactionType)
+    {
+        $this->container['transactionType'] = $transactionType;
 
         return $this;
     }

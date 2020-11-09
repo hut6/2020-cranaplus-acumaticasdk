@@ -55,7 +55,11 @@ class RawDataForReportModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'result' => '\Hut6\CranaplusAcumaticaSdk\Model\FinancialDataModel[]'
+        'result' => '\Hut6\CranaplusAcumaticaSdk\Model\FinancialDataModel[]',
+        'ledger' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'type' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'fromTransactionDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel',
+        'toTransactionDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel'
     ];
 
     /**
@@ -64,7 +68,11 @@ class RawDataForReportModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'result' => null
+        'result' => null,
+        'ledger' => null,
+        'type' => null,
+        'fromTransactionDate' => null,
+        'toTransactionDate' => null
     ];
 
     /**
@@ -94,7 +102,11 @@ class RawDataForReportModel extends EntityModel
      * @var string[]
      */
     protected static $attributeMap = [
-        'result' => 'Result'
+        'result' => 'Result',
+        'ledger' => 'Ledger',
+        'type' => 'Type',
+        'fromTransactionDate' => 'FromTransactionDate',
+        'toTransactionDate' => 'ToTransactionDate'
     ];
 
     /**
@@ -103,7 +115,11 @@ class RawDataForReportModel extends EntityModel
      * @var string[]
      */
     protected static $setters = [
-        'result' => 'setResult'
+        'result' => 'setResult',
+        'ledger' => 'setLedger',
+        'type' => 'setType',
+        'fromTransactionDate' => 'setFromTransactionDate',
+        'toTransactionDate' => 'setToTransactionDate'
     ];
 
     /**
@@ -112,7 +128,11 @@ class RawDataForReportModel extends EntityModel
      * @var string[]
      */
     protected static $getters = [
-        'result' => 'getResult'
+        'result' => 'getResult',
+        'ledger' => 'getLedger',
+        'type' => 'getType',
+        'fromTransactionDate' => 'getFromTransactionDate',
+        'toTransactionDate' => 'getToTransactionDate'
     ];
 
     /**
@@ -172,6 +192,10 @@ class RawDataForReportModel extends EntityModel
         parent::__construct($data);
 
         $this->container['result'] = isset($data['result']) ? $data['result'] : null;
+        $this->container['ledger'] = isset($data['ledger']) ? $data['ledger'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['fromTransactionDate'] = isset($data['fromTransactionDate']) ? $data['fromTransactionDate'] : null;
+        $this->container['toTransactionDate'] = isset($data['toTransactionDate']) ? $data['toTransactionDate'] : null;
     }
 
     /**
@@ -218,6 +242,102 @@ class RawDataForReportModel extends EntityModel
     public function setResult($result)
     {
         $this->container['result'] = $result;
+
+        return $this;
+    }
+
+    /**
+     * Gets ledger
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getLedger()
+    {
+        return $this->container['ledger'];
+    }
+
+    /**
+     * Sets ledger
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $ledger ledger
+     *
+     * @return $this
+     */
+    public function setLedger($ledger)
+    {
+        $this->container['ledger'] = $ledger;
+
+        return $this;
+    }
+
+    /**
+     * Gets type
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getType()
+    {
+        return $this->container['type'];
+    }
+
+    /**
+     * Sets type
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $type type
+     *
+     * @return $this
+     */
+    public function setType($type)
+    {
+        $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets fromTransactionDate
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel
+     */
+    public function getFromTransactionDate()
+    {
+        return $this->container['fromTransactionDate'];
+    }
+
+    /**
+     * Sets fromTransactionDate
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel $fromTransactionDate fromTransactionDate
+     *
+     * @return $this
+     */
+    public function setFromTransactionDate($fromTransactionDate)
+    {
+        $this->container['fromTransactionDate'] = $fromTransactionDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets toTransactionDate
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel
+     */
+    public function getToTransactionDate()
+    {
+        return $this->container['toTransactionDate'];
+    }
+
+    /**
+     * Sets toTransactionDate
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel $toTransactionDate toTransactionDate
+     *
+     * @return $this
+     */
+    public function setToTransactionDate($toTransactionDate)
+    {
+        $this->container['toTransactionDate'] = $toTransactionDate;
 
         return $this;
     }
