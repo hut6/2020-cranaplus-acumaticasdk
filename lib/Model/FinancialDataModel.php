@@ -72,7 +72,8 @@ class FinancialDataModel extends EntityModel
         'debit' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
         'credit' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
         'createdDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel',
-        'transactionType' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel'
+        'transactionType' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'batchControlTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel'
     ];
 
     /**
@@ -98,7 +99,8 @@ class FinancialDataModel extends EntityModel
         'debit' => null,
         'credit' => null,
         'createdDate' => null,
-        'transactionType' => null
+        'transactionType' => null,
+        'batchControlTotal' => null
     ];
 
     /**
@@ -145,7 +147,8 @@ class FinancialDataModel extends EntityModel
         'debit' => 'Debit',
         'credit' => 'Credit',
         'createdDate' => 'CreatedDate',
-        'transactionType' => 'TransactionType'
+        'transactionType' => 'TransactionType',
+        'batchControlTotal' => 'BatchControlTotal'
     ];
 
     /**
@@ -171,7 +174,8 @@ class FinancialDataModel extends EntityModel
         'debit' => 'setDebit',
         'credit' => 'setCredit',
         'createdDate' => 'setCreatedDate',
-        'transactionType' => 'setTransactionType'
+        'transactionType' => 'setTransactionType',
+        'batchControlTotal' => 'setBatchControlTotal'
     ];
 
     /**
@@ -197,7 +201,8 @@ class FinancialDataModel extends EntityModel
         'debit' => 'getDebit',
         'credit' => 'getCredit',
         'createdDate' => 'getCreatedDate',
-        'transactionType' => 'getTransactionType'
+        'transactionType' => 'getTransactionType',
+        'batchControlTotal' => 'getBatchControlTotal'
     ];
 
     /**
@@ -274,6 +279,7 @@ class FinancialDataModel extends EntityModel
         $this->container['credit'] = isset($data['credit']) ? $data['credit'] : null;
         $this->container['createdDate'] = isset($data['createdDate']) ? $data['createdDate'] : null;
         $this->container['transactionType'] = isset($data['transactionType']) ? $data['transactionType'] : null;
+        $this->container['batchControlTotal'] = isset($data['batchControlTotal']) ? $data['batchControlTotal'] : null;
     }
 
     /**
@@ -728,6 +734,30 @@ class FinancialDataModel extends EntityModel
     public function setTransactionType($transactionType)
     {
         $this->container['transactionType'] = $transactionType;
+
+        return $this;
+    }
+
+    /**
+     * Gets batchControlTotal
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel
+     */
+    public function getBatchControlTotal()
+    {
+        return $this->container['batchControlTotal'];
+    }
+
+    /**
+     * Sets batchControlTotal
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel $batchControlTotal batchControlTotal
+     *
+     * @return $this
+     */
+    public function setBatchControlTotal($batchControlTotal)
+    {
+        $this->container['batchControlTotal'] = $batchControlTotal;
 
         return $this;
     }
