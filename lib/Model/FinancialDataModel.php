@@ -73,7 +73,9 @@ class FinancialDataModel extends EntityModel
         'credit' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
         'createdDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel',
         'transactionType' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'batchControlTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel'
+        'batchControlTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
+        'batchNbr' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'lineNbr' => '\Hut6\CranaplusAcumaticaSdk\Model\IntValueModel'
     ];
 
     /**
@@ -100,7 +102,9 @@ class FinancialDataModel extends EntityModel
         'credit' => null,
         'createdDate' => null,
         'transactionType' => null,
-        'batchControlTotal' => null
+        'batchControlTotal' => null,
+        'batchNbr' => null,
+        'lineNbr' => null
     ];
 
     /**
@@ -148,7 +152,9 @@ class FinancialDataModel extends EntityModel
         'credit' => 'Credit',
         'createdDate' => 'CreatedDate',
         'transactionType' => 'TransactionType',
-        'batchControlTotal' => 'BatchControlTotal'
+        'batchControlTotal' => 'BatchControlTotal',
+        'batchNbr' => 'BatchNbr',
+        'lineNbr' => 'LineNbr'
     ];
 
     /**
@@ -175,7 +181,9 @@ class FinancialDataModel extends EntityModel
         'credit' => 'setCredit',
         'createdDate' => 'setCreatedDate',
         'transactionType' => 'setTransactionType',
-        'batchControlTotal' => 'setBatchControlTotal'
+        'batchControlTotal' => 'setBatchControlTotal',
+        'batchNbr' => 'setBatchNbr',
+        'lineNbr' => 'setLineNbr'
     ];
 
     /**
@@ -202,7 +210,9 @@ class FinancialDataModel extends EntityModel
         'credit' => 'getCredit',
         'createdDate' => 'getCreatedDate',
         'transactionType' => 'getTransactionType',
-        'batchControlTotal' => 'getBatchControlTotal'
+        'batchControlTotal' => 'getBatchControlTotal',
+        'batchNbr' => 'getBatchNbr',
+        'lineNbr' => 'getLineNbr'
     ];
 
     /**
@@ -280,6 +290,8 @@ class FinancialDataModel extends EntityModel
         $this->container['createdDate'] = isset($data['createdDate']) ? $data['createdDate'] : null;
         $this->container['transactionType'] = isset($data['transactionType']) ? $data['transactionType'] : null;
         $this->container['batchControlTotal'] = isset($data['batchControlTotal']) ? $data['batchControlTotal'] : null;
+        $this->container['batchNbr'] = isset($data['batchNbr']) ? $data['batchNbr'] : null;
+        $this->container['lineNbr'] = isset($data['lineNbr']) ? $data['lineNbr'] : null;
     }
 
     /**
@@ -758,6 +770,54 @@ class FinancialDataModel extends EntityModel
     public function setBatchControlTotal($batchControlTotal)
     {
         $this->container['batchControlTotal'] = $batchControlTotal;
+
+        return $this;
+    }
+
+    /**
+     * Gets batchNbr
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getBatchNbr()
+    {
+        return $this->container['batchNbr'];
+    }
+
+    /**
+     * Sets batchNbr
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $batchNbr batchNbr
+     *
+     * @return $this
+     */
+    public function setBatchNbr($batchNbr)
+    {
+        $this->container['batchNbr'] = $batchNbr;
+
+        return $this;
+    }
+
+    /**
+     * Gets lineNbr
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\IntValueModel
+     */
+    public function getLineNbr()
+    {
+        return $this->container['lineNbr'];
+    }
+
+    /**
+     * Sets lineNbr
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\IntValueModel $lineNbr lineNbr
+     *
+     * @return $this
+     */
+    public function setLineNbr($lineNbr)
+    {
+        $this->container['lineNbr'] = $lineNbr;
 
         return $this;
     }
