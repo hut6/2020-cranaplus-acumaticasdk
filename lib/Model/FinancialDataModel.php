@@ -75,7 +75,8 @@ class FinancialDataModel extends EntityModel
         'transactionType' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'batchControlTotal' => '\Hut6\CranaplusAcumaticaSdk\Model\DecimalValueModel',
         'batchNbr' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'lineNbr' => '\Hut6\CranaplusAcumaticaSdk\Model\IntValueModel'
+        'lineNbr' => '\Hut6\CranaplusAcumaticaSdk\Model\IntValueModel',
+        'status' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel'
     ];
 
     /**
@@ -104,7 +105,8 @@ class FinancialDataModel extends EntityModel
         'transactionType' => null,
         'batchControlTotal' => null,
         'batchNbr' => null,
-        'lineNbr' => null
+        'lineNbr' => null,
+        'status' => null
     ];
 
     /**
@@ -154,7 +156,8 @@ class FinancialDataModel extends EntityModel
         'transactionType' => 'TransactionType',
         'batchControlTotal' => 'BatchControlTotal',
         'batchNbr' => 'BatchNbr',
-        'lineNbr' => 'LineNbr'
+        'lineNbr' => 'LineNbr',
+        'status' => 'Status'
     ];
 
     /**
@@ -183,7 +186,8 @@ class FinancialDataModel extends EntityModel
         'transactionType' => 'setTransactionType',
         'batchControlTotal' => 'setBatchControlTotal',
         'batchNbr' => 'setBatchNbr',
-        'lineNbr' => 'setLineNbr'
+        'lineNbr' => 'setLineNbr',
+        'status' => 'setStatus'
     ];
 
     /**
@@ -212,7 +216,8 @@ class FinancialDataModel extends EntityModel
         'transactionType' => 'getTransactionType',
         'batchControlTotal' => 'getBatchControlTotal',
         'batchNbr' => 'getBatchNbr',
-        'lineNbr' => 'getLineNbr'
+        'lineNbr' => 'getLineNbr',
+        'status' => 'getStatus'
     ];
 
     /**
@@ -292,6 +297,7 @@ class FinancialDataModel extends EntityModel
         $this->container['batchControlTotal'] = isset($data['batchControlTotal']) ? $data['batchControlTotal'] : null;
         $this->container['batchNbr'] = isset($data['batchNbr']) ? $data['batchNbr'] : null;
         $this->container['lineNbr'] = isset($data['lineNbr']) ? $data['lineNbr'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
     }
 
     /**
@@ -818,6 +824,30 @@ class FinancialDataModel extends EntityModel
     public function setLineNbr($lineNbr)
     {
         $this->container['lineNbr'] = $lineNbr;
+
+        return $this;
+    }
+
+    /**
+     * Gets status
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getStatus()
+    {
+        return $this->container['status'];
+    }
+
+    /**
+     * Sets status
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $status status
+     *
+     * @return $this
+     */
+    public function setStatus($status)
+    {
+        $this->container['status'] = $status;
 
         return $this;
     }
