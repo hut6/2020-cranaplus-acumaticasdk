@@ -342,6 +342,22 @@ Class | Method | HTTP request | Description
 *EmployeeApi* | [**employeeGetList**](docs/Api/EmployeeApi.md#employeegetlist) | **GET** /Employee | Retrieves records that satisfy the specified conditions from the system.
 *EmployeeApi* | [**employeePutEntity**](docs/Api/EmployeeApi.md#employeeputentity) | **PUT** /Employee | Creates a record or updates an existing record.
 *EmployeeApi* | [**employeePutFile**](docs/Api/EmployeeApi.md#employeeputfile) | **PUT** /Employee/{ids}/files/{filename} | Attaches a file to a record.
+*EntitlementSummaryApi* | [**entitlementSummaryDeleteById**](docs/Api/EntitlementSummaryApi.md#entitlementsummarydeletebyid) | **DELETE** /EntitlementSummary/{id} | Deletes the record by its session identifier.
+*EntitlementSummaryApi* | [**entitlementSummaryDeleteByKeys**](docs/Api/EntitlementSummaryApi.md#entitlementsummarydeletebykeys) | **DELETE** /EntitlementSummary/{ids} | Deletes the record by the values of its key fields.
+*EntitlementSummaryApi* | [**entitlementSummaryGetAdHocSchema**](docs/Api/EntitlementSummaryApi.md#entitlementsummarygetadhocschema) | **GET** /EntitlementSummary/$adHocSchema | Retrieves the schema of custom fields of the entity from the system.
+*EntitlementSummaryApi* | [**entitlementSummaryGetById**](docs/Api/EntitlementSummaryApi.md#entitlementsummarygetbyid) | **GET** /EntitlementSummary/{id} | Retrieves a record by the value of the session entity ID from the system.
+*EntitlementSummaryApi* | [**entitlementSummaryGetByKeys**](docs/Api/EntitlementSummaryApi.md#entitlementsummarygetbykeys) | **GET** /EntitlementSummary/{ids} | Retrieves a record by the values of its key fields from the system.
+*EntitlementSummaryApi* | [**entitlementSummaryGetList**](docs/Api/EntitlementSummaryApi.md#entitlementsummarygetlist) | **GET** /EntitlementSummary | Retrieves records that satisfy the specified conditions from the system.
+*EntitlementSummaryApi* | [**entitlementSummaryPutEntity**](docs/Api/EntitlementSummaryApi.md#entitlementsummaryputentity) | **PUT** /EntitlementSummary | Creates a record or updates an existing record.
+*EntitlementSummaryApi* | [**entitlementSummaryPutFile**](docs/Api/EntitlementSummaryApi.md#entitlementsummaryputfile) | **PUT** /EntitlementSummary/{ids}/files/{filename} | Attaches a file to a record.
+*EntitlementSummaryReportApi* | [**entitlementSummaryReportDeleteById**](docs/Api/EntitlementSummaryReportApi.md#entitlementsummaryreportdeletebyid) | **DELETE** /EntitlementSummaryReport/{id} | Deletes the record by its session identifier.
+*EntitlementSummaryReportApi* | [**entitlementSummaryReportDeleteByKeys**](docs/Api/EntitlementSummaryReportApi.md#entitlementsummaryreportdeletebykeys) | **DELETE** /EntitlementSummaryReport/{ids} | Deletes the record by the values of its key fields.
+*EntitlementSummaryReportApi* | [**entitlementSummaryReportGetAdHocSchema**](docs/Api/EntitlementSummaryReportApi.md#entitlementsummaryreportgetadhocschema) | **GET** /EntitlementSummaryReport/$adHocSchema | Retrieves the schema of custom fields of the entity from the system.
+*EntitlementSummaryReportApi* | [**entitlementSummaryReportGetById**](docs/Api/EntitlementSummaryReportApi.md#entitlementsummaryreportgetbyid) | **GET** /EntitlementSummaryReport/{id} | Retrieves a record by the value of the session entity ID from the system.
+*EntitlementSummaryReportApi* | [**entitlementSummaryReportGetByKeys**](docs/Api/EntitlementSummaryReportApi.md#entitlementsummaryreportgetbykeys) | **GET** /EntitlementSummaryReport/{ids} | Retrieves a record by the values of its key fields from the system.
+*EntitlementSummaryReportApi* | [**entitlementSummaryReportGetList**](docs/Api/EntitlementSummaryReportApi.md#entitlementsummaryreportgetlist) | **GET** /EntitlementSummaryReport | Retrieves records that satisfy the specified conditions from the system.
+*EntitlementSummaryReportApi* | [**entitlementSummaryReportPutEntity**](docs/Api/EntitlementSummaryReportApi.md#entitlementsummaryreportputentity) | **PUT** /EntitlementSummaryReport | Creates a record or updates an existing record.
+*EntitlementSummaryReportApi* | [**entitlementSummaryReportPutFile**](docs/Api/EntitlementSummaryReportApi.md#entitlementsummaryreportputfile) | **PUT** /EntitlementSummaryReport/{ids}/files/{filename} | Attaches a file to a record.
 *EventApi* | [**eventDeleteById**](docs/Api/EventApi.md#eventdeletebyid) | **DELETE** /Event/{id} | Deletes the record by its session identifier.
 *EventApi* | [**eventDeleteByKeys**](docs/Api/EventApi.md#eventdeletebykeys) | **DELETE** /Event/{ids} | Deletes the record by the values of its key fields.
 *EventApi* | [**eventGetAdHocSchema**](docs/Api/EventApi.md#eventgetadhocschema) | **GET** /Event/$adHocSchema | Retrieves the schema of custom fields of the entity from the system.
@@ -989,6 +1005,10 @@ Class | Method | HTTP request | Description
  - [EmployeeCostRecordModel](docs/Model/EmployeeCostRecordModel.md)
  - [EmployeeModel](docs/Model/EmployeeModel.md)
  - [EmploymentHistoryRecordModel](docs/Model/EmploymentHistoryRecordModel.md)
+ - [EntitlementSumReportModel](docs/Model/EntitlementSumReportModel.md)
+ - [EntitlementSummaryModel](docs/Model/EntitlementSummaryModel.md)
+ - [EntitlementSummaryReportModel](docs/Model/EntitlementSummaryReportModel.md)
+ - [EntitlementsModel](docs/Model/EntitlementsModel.md)
  - [EntityModel](docs/Model/EntityModel.md)
  - [EventAttendeeModel](docs/Model/EventAttendeeModel.md)
  - [EventModel](docs/Model/EventModel.md)
