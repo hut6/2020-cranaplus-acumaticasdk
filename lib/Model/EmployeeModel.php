@@ -55,8 +55,18 @@ class EmployeeModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'description' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'value' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'email' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'fax' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'firstName' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'lastName' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'phone1' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'phone1Type' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'phone2' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'phone2Type' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'phone3' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'phone3Type' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'title' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'financialSettings' => '\Hut6\CranaplusAcumaticaSdk\Model\FinancialSettingModel',
         'branchID' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'contact' => '\Hut6\CranaplusAcumaticaSdk\Model\ContactModel',
         'currencyID' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
@@ -78,8 +88,18 @@ class EmployeeModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'description' => null,
-        'value' => null,
+        'email' => null,
+        'fax' => null,
+        'firstName' => null,
+        'lastName' => null,
+        'phone1' => null,
+        'phone1Type' => null,
+        'phone2' => null,
+        'phone2Type' => null,
+        'phone3' => null,
+        'phone3Type' => null,
+        'title' => null,
+        'financialSettings' => null,
         'branchID' => null,
         'contact' => null,
         'currencyID' => null,
@@ -122,8 +142,18 @@ class EmployeeModel extends EntityModel
      * @var string[]
      */
     protected static $attributeMap = [
-        'description' => 'Description',
-        'value' => 'Value',
+        'email' => 'Email',
+        'fax' => 'Fax',
+        'firstName' => 'FirstName',
+        'lastName' => 'LastName',
+        'phone1' => 'Phone1',
+        'phone1Type' => 'Phone1Type',
+        'phone2' => 'Phone2',
+        'phone2Type' => 'Phone2Type',
+        'phone3' => 'Phone3',
+        'phone3Type' => 'Phone3Type',
+        'title' => 'Title',
+        'financialSettings' => 'FinancialSettings',
         'branchID' => 'BranchID',
         'contact' => 'Contact',
         'currencyID' => 'CurrencyID',
@@ -145,8 +175,18 @@ class EmployeeModel extends EntityModel
      * @var string[]
      */
     protected static $setters = [
-        'description' => 'setDescription',
-        'value' => 'setValue',
+        'email' => 'setEmail',
+        'fax' => 'setFax',
+        'firstName' => 'setFirstName',
+        'lastName' => 'setLastName',
+        'phone1' => 'setPhone1',
+        'phone1Type' => 'setPhone1Type',
+        'phone2' => 'setPhone2',
+        'phone2Type' => 'setPhone2Type',
+        'phone3' => 'setPhone3',
+        'phone3Type' => 'setPhone3Type',
+        'title' => 'setTitle',
+        'financialSettings' => 'setFinancialSettings',
         'branchID' => 'setBranchID',
         'contact' => 'setContact',
         'currencyID' => 'setCurrencyID',
@@ -168,8 +208,18 @@ class EmployeeModel extends EntityModel
      * @var string[]
      */
     protected static $getters = [
-        'description' => 'getDescription',
-        'value' => 'getValue',
+        'email' => 'getEmail',
+        'fax' => 'getFax',
+        'firstName' => 'getFirstName',
+        'lastName' => 'getLastName',
+        'phone1' => 'getPhone1',
+        'phone1Type' => 'getPhone1Type',
+        'phone2' => 'getPhone2',
+        'phone2Type' => 'getPhone2Type',
+        'phone3' => 'getPhone3',
+        'phone3Type' => 'getPhone3Type',
+        'title' => 'getTitle',
+        'financialSettings' => 'getFinancialSettings',
         'branchID' => 'getBranchID',
         'contact' => 'getContact',
         'currencyID' => 'getCurrencyID',
@@ -241,8 +291,18 @@ class EmployeeModel extends EntityModel
     {
         parent::__construct($data);
 
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
+        $this->container['email'] = isset($data['email']) ? $data['email'] : null;
+        $this->container['fax'] = isset($data['fax']) ? $data['fax'] : null;
+        $this->container['firstName'] = isset($data['firstName']) ? $data['firstName'] : null;
+        $this->container['lastName'] = isset($data['lastName']) ? $data['lastName'] : null;
+        $this->container['phone1'] = isset($data['phone1']) ? $data['phone1'] : null;
+        $this->container['phone1Type'] = isset($data['phone1Type']) ? $data['phone1Type'] : null;
+        $this->container['phone2'] = isset($data['phone2']) ? $data['phone2'] : null;
+        $this->container['phone2Type'] = isset($data['phone2Type']) ? $data['phone2Type'] : null;
+        $this->container['phone3'] = isset($data['phone3']) ? $data['phone3'] : null;
+        $this->container['phone3Type'] = isset($data['phone3Type']) ? $data['phone3Type'] : null;
+        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
+        $this->container['financialSettings'] = isset($data['financialSettings']) ? $data['financialSettings'] : null;
         $this->container['branchID'] = isset($data['branchID']) ? $data['branchID'] : null;
         $this->container['contact'] = isset($data['contact']) ? $data['contact'] : null;
         $this->container['currencyID'] = isset($data['currencyID']) ? $data['currencyID'] : null;
@@ -283,49 +343,289 @@ class EmployeeModel extends EntityModel
 
 
     /**
-     * Gets description
+     * Gets email
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
      */
-    public function getDescription()
+    public function getEmail()
     {
-        return $this->container['description'];
+        return $this->container['email'];
     }
 
     /**
-     * Sets description
+     * Sets email
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $description description
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $email email
      *
      * @return $this
      */
-    public function setDescription($description)
+    public function setEmail($email)
     {
-        $this->container['description'] = $description;
+        $this->container['email'] = $email;
 
         return $this;
     }
 
     /**
-     * Gets value
+     * Gets fax
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
      */
-    public function getValue()
+    public function getFax()
     {
-        return $this->container['value'];
+        return $this->container['fax'];
     }
 
     /**
-     * Sets value
+     * Sets fax
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $value value
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $fax fax
      *
      * @return $this
      */
-    public function setValue($value)
+    public function setFax($fax)
     {
-        $this->container['value'] = $value;
+        $this->container['fax'] = $fax;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstName
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getFirstName()
+    {
+        return $this->container['firstName'];
+    }
+
+    /**
+     * Sets firstName
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $firstName firstName
+     *
+     * @return $this
+     */
+    public function setFirstName($firstName)
+    {
+        $this->container['firstName'] = $firstName;
+
+        return $this;
+    }
+
+    /**
+     * Gets lastName
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getLastName()
+    {
+        return $this->container['lastName'];
+    }
+
+    /**
+     * Sets lastName
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $lastName lastName
+     *
+     * @return $this
+     */
+    public function setLastName($lastName)
+    {
+        $this->container['lastName'] = $lastName;
+
+        return $this;
+    }
+
+    /**
+     * Gets phone1
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getPhone1()
+    {
+        return $this->container['phone1'];
+    }
+
+    /**
+     * Sets phone1
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $phone1 phone1
+     *
+     * @return $this
+     */
+    public function setPhone1($phone1)
+    {
+        $this->container['phone1'] = $phone1;
+
+        return $this;
+    }
+
+    /**
+     * Gets phone1Type
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getPhone1Type()
+    {
+        return $this->container['phone1Type'];
+    }
+
+    /**
+     * Sets phone1Type
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $phone1Type phone1Type
+     *
+     * @return $this
+     */
+    public function setPhone1Type($phone1Type)
+    {
+        $this->container['phone1Type'] = $phone1Type;
+
+        return $this;
+    }
+
+    /**
+     * Gets phone2
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getPhone2()
+    {
+        return $this->container['phone2'];
+    }
+
+    /**
+     * Sets phone2
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $phone2 phone2
+     *
+     * @return $this
+     */
+    public function setPhone2($phone2)
+    {
+        $this->container['phone2'] = $phone2;
+
+        return $this;
+    }
+
+    /**
+     * Gets phone2Type
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getPhone2Type()
+    {
+        return $this->container['phone2Type'];
+    }
+
+    /**
+     * Sets phone2Type
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $phone2Type phone2Type
+     *
+     * @return $this
+     */
+    public function setPhone2Type($phone2Type)
+    {
+        $this->container['phone2Type'] = $phone2Type;
+
+        return $this;
+    }
+
+    /**
+     * Gets phone3
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getPhone3()
+    {
+        return $this->container['phone3'];
+    }
+
+    /**
+     * Sets phone3
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $phone3 phone3
+     *
+     * @return $this
+     */
+    public function setPhone3($phone3)
+    {
+        $this->container['phone3'] = $phone3;
+
+        return $this;
+    }
+
+    /**
+     * Gets phone3Type
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getPhone3Type()
+    {
+        return $this->container['phone3Type'];
+    }
+
+    /**
+     * Sets phone3Type
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $phone3Type phone3Type
+     *
+     * @return $this
+     */
+    public function setPhone3Type($phone3Type)
+    {
+        $this->container['phone3Type'] = $phone3Type;
+
+        return $this;
+    }
+
+    /**
+     * Gets title
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getTitle()
+    {
+        return $this->container['title'];
+    }
+
+    /**
+     * Sets title
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $title title
+     *
+     * @return $this
+     */
+    public function setTitle($title)
+    {
+        $this->container['title'] = $title;
+
+        return $this;
+    }
+
+    /**
+     * Gets financialSettings
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\FinancialSettingModel
+     */
+    public function getFinancialSettings()
+    {
+        return $this->container['financialSettings'];
+    }
+
+    /**
+     * Sets financialSettings
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\FinancialSettingModel $financialSettings financialSettings
+     *
+     * @return $this
+     */
+    public function setFinancialSettings($financialSettings)
+    {
+        $this->container['financialSettings'] = $financialSettings;
 
         return $this;
     }

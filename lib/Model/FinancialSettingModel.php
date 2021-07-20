@@ -1,6 +1,6 @@
 <?php
 /**
- * EntitlementSumReportModel
+ * FinancialSettingModel
  *
  * PHP version 5
  *
@@ -31,14 +31,14 @@ namespace Hut6\CranaplusAcumaticaSdk\Model;
 use \Hut6\CranaplusAcumaticaSdk\ObjectSerializer;
 
 /**
- * EntitlementSumReportModel Class Doc Comment
+ * FinancialSettingModel Class Doc Comment
  *
  * @category Class
  * @package  Hut6\CranaplusAcumaticaSdk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class EntitlementSumReportModel extends EntityModel 
+class FinancialSettingModel extends EntityModel 
 {
     const DISCRIMINATOR = null;
 
@@ -47,7 +47,7 @@ class EntitlementSumReportModel extends EntityModel
       *
       * @var string
       */
-    protected static $swaggerModelName = 'EntitlementSumReport';
+    protected static $swaggerModelName = 'FinancialSetting';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -55,7 +55,8 @@ class EntitlementSumReportModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'htmlContent' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel'
+        'value' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
+        'description' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel'
     ];
 
     /**
@@ -64,7 +65,8 @@ class EntitlementSumReportModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'htmlContent' => null
+        'value' => null,
+        'description' => null
     ];
 
     /**
@@ -94,7 +96,8 @@ class EntitlementSumReportModel extends EntityModel
      * @var string[]
      */
     protected static $attributeMap = [
-        'htmlContent' => 'HtmlContent'
+        'value' => 'Value',
+        'description' => 'Description'
     ];
 
     /**
@@ -103,7 +106,8 @@ class EntitlementSumReportModel extends EntityModel
      * @var string[]
      */
     protected static $setters = [
-        'htmlContent' => 'setHtmlContent'
+        'value' => 'setValue',
+        'description' => 'setDescription'
     ];
 
     /**
@@ -112,7 +116,8 @@ class EntitlementSumReportModel extends EntityModel
      * @var string[]
      */
     protected static $getters = [
-        'htmlContent' => 'getHtmlContent'
+        'value' => 'getValue',
+        'description' => 'getDescription'
     ];
 
     /**
@@ -171,7 +176,8 @@ class EntitlementSumReportModel extends EntityModel
     {
         parent::__construct($data);
 
-        $this->container['htmlContent'] = isset($data['htmlContent']) ? $data['htmlContent'] : null;
+        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
     }
 
     /**
@@ -199,25 +205,49 @@ class EntitlementSumReportModel extends EntityModel
 
 
     /**
-     * Gets htmlContent
+     * Gets value
      *
      * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
      */
-    public function getHtmlContent()
+    public function getValue()
     {
-        return $this->container['htmlContent'];
+        return $this->container['value'];
     }
 
     /**
-     * Sets htmlContent
+     * Sets value
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $htmlContent htmlContent
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $value value
      *
      * @return $this
      */
-    public function setHtmlContent($htmlContent)
+    public function setValue($value)
     {
-        $this->container['htmlContent'] = $htmlContent;
+        $this->container['value'] = $value;
+
+        return $this;
+    }
+
+    /**
+     * Gets description
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel
+     */
+    public function getDescription()
+    {
+        return $this->container['description'];
+    }
+
+    /**
+     * Sets description
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\StringValueModel $description description
+     *
+     * @return $this
+     */
+    public function setDescription($description)
+    {
+        $this->container['description'] = $description;
 
         return $this;
     }

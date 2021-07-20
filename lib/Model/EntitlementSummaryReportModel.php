@@ -55,9 +55,11 @@ class EntitlementSummaryReportModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'results' => '\Hut6\CranaplusAcumaticaSdk\Model\EntitlementSummaryDetailModel[]',
         'employee' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
         'payRun' => '\Hut6\CranaplusAcumaticaSdk\Model\StringValueModel',
-        'results' => '\Hut6\CranaplusAcumaticaSdk\Model\EntitlementSumReportModel[]'
+        'fromDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel',
+        'toDate' => '\Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel'
     ];
 
     /**
@@ -66,9 +68,11 @@ class EntitlementSummaryReportModel extends EntityModel
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'results' => null,
         'employee' => null,
         'payRun' => null,
-        'results' => null
+        'fromDate' => null,
+        'toDate' => null
     ];
 
     /**
@@ -98,9 +102,11 @@ class EntitlementSummaryReportModel extends EntityModel
      * @var string[]
      */
     protected static $attributeMap = [
+        'results' => 'Results',
         'employee' => 'Employee',
         'payRun' => 'PayRun',
-        'results' => 'Results'
+        'fromDate' => 'FromDate',
+        'toDate' => 'ToDate'
     ];
 
     /**
@@ -109,9 +115,11 @@ class EntitlementSummaryReportModel extends EntityModel
      * @var string[]
      */
     protected static $setters = [
+        'results' => 'setResults',
         'employee' => 'setEmployee',
         'payRun' => 'setPayRun',
-        'results' => 'setResults'
+        'fromDate' => 'setFromDate',
+        'toDate' => 'setToDate'
     ];
 
     /**
@@ -120,9 +128,11 @@ class EntitlementSummaryReportModel extends EntityModel
      * @var string[]
      */
     protected static $getters = [
+        'results' => 'getResults',
         'employee' => 'getEmployee',
         'payRun' => 'getPayRun',
-        'results' => 'getResults'
+        'fromDate' => 'getFromDate',
+        'toDate' => 'getToDate'
     ];
 
     /**
@@ -181,9 +191,11 @@ class EntitlementSummaryReportModel extends EntityModel
     {
         parent::__construct($data);
 
+        $this->container['results'] = isset($data['results']) ? $data['results'] : null;
         $this->container['employee'] = isset($data['employee']) ? $data['employee'] : null;
         $this->container['payRun'] = isset($data['payRun']) ? $data['payRun'] : null;
-        $this->container['results'] = isset($data['results']) ? $data['results'] : null;
+        $this->container['fromDate'] = isset($data['fromDate']) ? $data['fromDate'] : null;
+        $this->container['toDate'] = isset($data['toDate']) ? $data['toDate'] : null;
     }
 
     /**
@@ -209,6 +221,30 @@ class EntitlementSummaryReportModel extends EntityModel
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets results
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\EntitlementSummaryDetailModel[]
+     */
+    public function getResults()
+    {
+        return $this->container['results'];
+    }
+
+    /**
+     * Sets results
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\EntitlementSummaryDetailModel[] $results results
+     *
+     * @return $this
+     */
+    public function setResults($results)
+    {
+        $this->container['results'] = $results;
+
+        return $this;
+    }
 
     /**
      * Gets employee
@@ -259,25 +295,49 @@ class EntitlementSummaryReportModel extends EntityModel
     }
 
     /**
-     * Gets results
+     * Gets fromDate
      *
-     * @return \Hut6\CranaplusAcumaticaSdk\Model\EntitlementSumReportModel[]
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel
      */
-    public function getResults()
+    public function getFromDate()
     {
-        return $this->container['results'];
+        return $this->container['fromDate'];
     }
 
     /**
-     * Sets results
+     * Sets fromDate
      *
-     * @param \Hut6\CranaplusAcumaticaSdk\Model\EntitlementSumReportModel[] $results results
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel $fromDate fromDate
      *
      * @return $this
      */
-    public function setResults($results)
+    public function setFromDate($fromDate)
     {
-        $this->container['results'] = $results;
+        $this->container['fromDate'] = $fromDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets toDate
+     *
+     * @return \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel
+     */
+    public function getToDate()
+    {
+        return $this->container['toDate'];
+    }
+
+    /**
+     * Sets toDate
+     *
+     * @param \Hut6\CranaplusAcumaticaSdk\Model\DateTimeValueModel $toDate toDate
+     *
+     * @return $this
+     */
+    public function setToDate($toDate)
+    {
+        $this->container['toDate'] = $toDate;
 
         return $this;
     }
